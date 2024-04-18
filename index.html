@@ -8,7 +8,21 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
 
+        .image-container img {
+            width: 20%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .image-container p {
+            text-align: center;
+        }
+  </style>
+  
   <title>Frame Interpolation with Consecutve Brownian Bridge Diffusion</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -129,36 +143,26 @@
 </h1>
 </div>
 
-<div class="row">
-   <div class="column">
-      <img src="static/images/vid_0_im_0.png" width="25%">
-       <h2 class="subtitle has-text-centered" width="25%">
-          The starting frame of multiframe interpolation.
-        </h2>
-   </div>
-  
-   <div class="column">
-      <img src="static/images/vid_0_im_1.png" width="25%">
-      <h2 class="subtitle has-text-centered">
-          The ending frame of multiframe interpolation.
-      </h2>
-   </div>
-
-   <div class="column">
-      <img src="static/images/our0.gif" width="25%">
-       <h2 class="subtitle has-text-centered" width="25%">
-          Multiframe interpolation result of <b>our method</b>. The first and the last frame are given, the middle 7 frames are interpolated.
-        </h2>
-   </div>
-  
-   <div class="column">
-      <img src="static/images/ldm0.gif" width="25%">
-      <h2 class="subtitle has-text-centered">
-          Multiframe interpolation result of <b>LDMVFI</b>. The first and the last frame are given, the middle 7 frames are interpolated. The vehicle on the left is distorted.
-      </h2>
-   </div>
-  
+<div class="image-container">
+    <div>
+        <img src="static/images/vid_0_im_0.png" alt="Image 1">
+        <p>The starting frame of multiframe interpolation.</p>
+    </div>
+    <div>
+        <img src="static/images/vid_0_im_1.png" alt="Image 2">
+        <p>The ending frame of multiframe interpolation.</p>
+    </div>
+    <div>
+        <img src="static/images/our0.gif" alt="Image 3">
+        <p>Multiframe interpolation result of <b>our method</b>. The first and the last frame are given, the middle 7 frames are interpolated.</p>
+    </div>
+    <div>
+        <img src="static/images/our1.gif" alt="Image 4">
+        <p> Multiframe interpolation result of <b>LDMVFI</b>. The first and the last frame are given, the middle 7 frames are interpolated. The vehicle on the left is distorted.</p>
+    </div>
 </div>
+
+
 
   
 <!-- Image carousel -->
